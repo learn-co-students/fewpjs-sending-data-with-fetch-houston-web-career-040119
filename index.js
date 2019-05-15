@@ -21,19 +21,19 @@ function submitData(name, email){
     .then(function(data) {
         console.log(data)
         // let div = document.createElement('div')
-        let p = document.createElement('p')
-        // debugger
-        p.innerHTML = data.id
-        // div.append(p)
-        document.body.append(p)
+        // let p = document.createElement('p')
+        // // debugger
+        // p.innerHTML = data.id
+        // // div.append(p)
+        document.body.innerHTML = data.id
     })
     .catch(function(error){
         alert('Unauthorized Access')
-        // let div = document.createElement('div')
-        let p = document.createElement('p')
-        p.innerHTML = error.message
-        // div.append(p)
-        document.body.append(p)
+        // // let div = document.createElement('div')
+        // let p = document.createElement('p')
+        // p.innerHTML = error.message
+        // // div.append(p)
+        document.body.innerHTML = error.message
     })
 }
     
